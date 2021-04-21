@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <div>
+        <button onclick="document.getElementById('texto').innerHTML = 'Prueba'">Dame xfa</button>
+        <p id="texto">Lo normal</p>
+    </div>
+
+    <div>
+        <button onclick="document.getElementById('texto2').innerHTML = Date()">Dame xfa</button>
+        <p id="texto2">Lo normal</p>
+    </div>
+    
+    <!-- <div>
+    <img id="gif" src="img/tenor.gif" alt="GIF">
+    <button onclick='document.getElementById("gif").src = "img/tenor-17.jpg"'>Parar imagen</button>
+    <button onclick='document.getElementById("gif").src = "img/tenor.gif"'>Reanudar imagen</button>
+    </div> -->
+
+    <div>
+        <input id="nombre" type="text">
+        <!-- <button id="almacenar">Guardar</button> -->
+        <button id="mostrar">Mostrar</button>
+    </div>
+    <script>
+        // var nombre = sessionStorage.getItem("nombre");
+        var num1 = 1;
+        var num2 = 2;
+        var espacio = " ";
+        var suma3 = num1+num2; // Suma de dos variables almacenadas en una
+        // document.getElementById("alamcenar").onclick = function() {guardar()};
+
+        // function guardar() {
+        //     sessionStorage.setItem("nombre");
+        // }
+
+        document.getElementById("mostrar").onclick = function() {mostrar()};
+            
+        function mostar(){
+            window.alert(nombre+espacio+suma3);
+    
+        };
+        console.log(document);
+    </script>
+
+</body>
+</html>
